@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C18878</color>
+    <color name="colorPrimaryDark">#A3453F</color>
+    <color name="colorAccent">#FF2323</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#231711</color>
+    <color name="colorSilver">#C4C4C4</color>
+    <color name="cottonSeed">#C2BAB5</color>
+    <color name="squirrel">#95847B</color>
+    <color name="serenade">#FFF5E7</color>
+</resources>

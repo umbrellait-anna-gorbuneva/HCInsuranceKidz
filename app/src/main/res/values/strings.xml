@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HCInsuranceKidz</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_menu_home_screen_name">Лента</string>
+    <string name="navigation_menu_media">Медиа</string>
+    <string name="navigation_menu_services">Сервисы</string>
+    <string name="navigation_menu_bonuces">Бонусы</string>
+    <string name="navigation_menu_profile">Профиль</string>
+</resources>

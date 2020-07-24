@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="auth_or_register">Войти или зарегистрироваться</string>
+    <string name="about_registration">При регистрации вам нужно будет ввести номер телефона и e-mail. Мы дадим вам 20 бесплатных книг, доступ к экрану Бонусы, а также вы сможете добавлять посты в избранное.</string>
+    <string name="about_app">О приложении</string>
+    <string name="type_phone_number">Укажите телефон</string>
+    <string name="you_can_access_to_service">Сможете получить доступ к функционалу сервиса, к экрану Бонусы и добавлять посты в избранное.</string>
+    <string name="we_will_send_you_sms">Мы вышлем код для подтверждения номера телефона в СМС-сообщении. Введите его на следующем экране.</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="empty_text">" "</string>
+    <string name="terms_conditions"><u>Условия использования</u></string>
+    <string name="privacy_policy"><u>Политика конфиденциальности</u></string>
+    <string name="Continue">Продолжить</string>
+    <string name="you_accept_condition">При входе или регистрации вы принимаете:</string>
+    <string name="get_new_sms_code">Получить новый код</string>
+    <string name="number_should_contain">Номер телефона должен состоять из 11 цифр</string>
+    <string name="sms_code_send_to_number">Код отправили сообщением \nна +7 (898) 894-28-34</string>
+    <string name="sms_code_send_in_text">Код отправили сообщением \nна</string>
+    <string name="enter_code">Введите код</string>
+    <string name="sms_code_hint">●●●●●●</string>
+    <string name="wrong_sms">Неверный код</string>
+    <string name="new_code_available">Новый код можно будет получить через</string>
+    <string name="say_your_name">Укажите имя</string>
+    <string name="enter_email">Введите ваше имя и email, и получите 20 бесплатных книг.</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="email">Email</string>
+    <string name="name">Имя</string>
+    <string name="invalid_email">Введен некорректный email</string>
+
+    <string name="open_email">Открыть почту</string>
+    <string name="confirm_your_email">И ещё кое-что: подтвердите e-mail, перейдя по ссылке, которую мы выслали на </string>
+    <string name="confirm_your_email_full">И ещё кое-что: подтвердите e-mail, перейдя по ссылке, которую мы выслали на konstancia@gmail.com</string>
+    <string name="skip">Пропустить</string>
+    <string name="you_have_full_access">Теперь у вас есть полный доступ\nк функционалу сервиса.</string>
+    <string name="thanks_registration">Спасибо\nза регистрацию!</string>
+
+</resources>

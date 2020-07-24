@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.code_enter.CodeEnterProfileFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textCodeLabelHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_margin"
+        android:layout_marginEnd="@dimen/base_margin"
+        android:fontFamily="@font/alegreya_bold"
+        android:gravity="center"
+        android:text="@string/enter_code"
+        android:textColor="@color/colorBlack"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSmsWasSent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_margin"
+        android:layout_marginTop="@dimen/base_margin"
+        android:layout_marginEnd="@dimen/base_margin"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="@string/sms_code_send_to_number"
+        android:textColor="@color/squirrel"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCodeLabelHeader" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutSmsCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSmsWasSent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputSmsCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorWhite"
+            android:digits="0123456789"
+            android:fontFamily="@font/alegreya_bold"
+            android:gravity="center"
+            android:hint="@string/sms_code_hint"
+            android:inputType="numberDecimal"
+            android:letterSpacing="0.4"
+            android:maxLength="6"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorSilver"
+            android:textSize="36sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textErrorSmsCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_margin"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="@dimen/base_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/wrong_sms"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutSmsCode" />
+
+
+    <TextView
+        android:id="@+id/countDownText"
+        android:layout_width="0dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="12sp"
+        android:textColor="@color/cottonSeed"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/new_code_available"
+        app:layout_constraintBottom_toTopOf="@+id/continueButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".65" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueButton"
+        style="@style/big_button_1_line"
+        android:background="@drawable/bckgrnd_button_gradient_rounded_gray"
+        android:text="@string/get_new_sms_code"
+        android:textColor="@color/colorSilver"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineCode" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/small_comment"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:text="@string/you_accept_condition"
+        app:layout_constraintBottom_toTopOf="@id/linkedText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/linkedText1"
+        style="@style/small_comment"
+        android:layout_marginBottom="4dp"
+        android:text="@string/terms_conditions"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/linkedText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/linkedText2"
+        style="@style/small_comment"
+        android:layout_marginBottom="@dimen/base_margin"
+        android:text="@string/privacy_policy"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

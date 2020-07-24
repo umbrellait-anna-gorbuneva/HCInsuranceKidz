@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_newsline"
+    app:startDestination="@id/newslineHomeFragment">
+
+    <fragment
+        android:id="@+id/newslineHomeFragment"
+        android:name="com.umbrellait.newsline.NewslineHomeFragment"
+        android:label="fragment_newsline_home"
+        tools:layout="@layout/fragment_newsline_home" >
+        <action
+            android:id="@+id/action_newslineHomeFragment_to_newslistAllFragment"
+            app:destination="@id/newslistAllFragment" />
+        <action
+            android:id="@+id/action_newslineHomeFragment_to_newslistDetailFragment"
+            app:destination="@id/newslistDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newslistAllFragment"
+        android:name="com.umbrellait.newsline.NewslistAllFragment"
+        android:label="fragment_newslist_all"
+        tools:layout="@layout/fragment_newslist_all" >
+        <action
+            android:id="@+id/action_newslistAllFragment_to_newslistDetailFragment"
+            app:destination="@id/newslistDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newslistDetailFragment"
+        android:name="com.umbrellait.newsline.NewslistDetailFragment"
+        android:label="fragment_newslist_detail"
+        tools:layout="@layout/fragment_newslist_detail" />
+</navigation>

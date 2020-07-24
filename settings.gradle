@@ -1,0 +1,6 @@
+rootProject.name='HCInsuranceKidz'
+include ':app'
+include ':features:profile'
+include ':libraries:core'
+include ':commons:uicomponents'
+include ':features:newsline'

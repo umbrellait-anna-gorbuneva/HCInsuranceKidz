@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_main"
+    app:startDestination="@id/nav_newsline">
+
+    <include app:graph="@navigation/nav_profile"/>
+    <include app:graph="@navigation/nav_newsline"/>
+<!--    <include app:graph="@navigation/nav_locations"/>-->
+<!--    <include app:graph="@navigation/nav_episodes"/>-->
+
+</navigation>
+
+
+
+
+
+<!--<navigation xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/bottom_nav_graph.xml"-->
+<!--    app:startDestination="@id/homeFragment">-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/homeFragment"-->
+<!--        android:name="com.umbrellait.hcinsurancekidz.HomeFragment"-->
+<!--        android:label="fragment_home"-->
+<!--        tools:layout="@layout/fragment_home" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/mediaFragment"-->
+<!--        android:name="com.umbrellait.hcinsurancekidz.MediaFragment"-->
+<!--        android:label="fragment_media"-->
+<!--        tools:layout="@layout/fragment_media" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/servicesFragment"-->
+<!--        android:name="com.umbrellait.hcinsurancekidz.ServicesFragment"-->
+<!--        android:label="fragment_services"-->
+<!--        tools:layout="@layout/fragment_services" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/bonusFragment"-->
+<!--        android:name="com.umbrellait.hcinsurancekidz.BonusFragment"-->
+<!--        android:label="fragment_bonus"-->
+<!--        tools:layout="@layout/fragment_bonus" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/profileFragment"-->
+<!--        android:name="com.umbrellait.hcinsurancekidz.ProfileFragment"-->
+<!--        android:label="fragment_profile"-->
+<!--        tools:layout="@layout/fragment_profile" />-->
+<!--</navigation>-->

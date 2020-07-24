@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_profile"
+    app:startDestination="@id/notAuthorizedProfileFragment">
+<!--    app:startDestination="@id/enterPersonalDataProfileFragment">-->
+<!--    app:startDestination="@id/registrationFinishedNoEmailProfileFragment">-->
+    <!--    app:startDestination="@id/notAuthorizedProfileFragment"-->
+    <!--    app:startDestination="@id/codeEnterProfileFragment"-->
+
+    <fragment
+        android:id="@+id/notAuthorizedProfileFragment"
+        android:name="com.umbrellait.profile.NotAuthorizedProfileFragment"
+        android:label="fragment_profile_not_authorized"
+        tools:layout="@layout/fragment_profile_not_authorized">
+        <action
+            android:id="@+id/action_notAuthorizedProfileFragment_to_profileEnterPhoneNumberFragment"
+            app:destination="@id/profileEnterPhoneNumberFragment"
+            app:enterAnim="@anim/fragment_fade_exit"
+            app:exitAnim="@anim/fragment_fade_enter"
+            app:popEnterAnim="@anim/fragment_open_enter"
+            app:popExitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileEnterPhoneNumberFragment"
+        android:name="com.umbrellait.profile.presentation.phone_number_enter.PhoneNumberEnterProfileFragment"
+        android:label="fragment_profile_enter_phone_number"
+        tools:layout="@layout/fragment_profile_enter_phone_number">
+        <action
+            android:id="@+id/action_start_codeEnterProfileFragment"
+            app:destination="@id/codeEnterProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codeEnterProfileFragment"
+        android:name="com.umbrellait.profile.presentation.code_enter.CodeEnterProfileFragment"
+        android:label="fragment_profile_code_enter"
+        tools:layout="@layout/fragment_profile_code_enter">
+        <action
+            android:id="@+id/action_start_enterPersonalDataProfileFragment"
+            app:destination="@id/enterPersonalDataProfileFragment" />
+        <argument
+            android:name="userPhoneNumber"
+            android:defaultValue='""'
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterPersonalDataProfileFragment"
+        android:name="com.umbrellait.profile.presentation.enter_personal_data.EnterPersonalDataProfileFragment"
+        android:label="fragment_profile_enter_personal_data"
+        tools:layout="@layout/fragment_profile_enter_personal_data">
+        <action
+            android:id="@+id/action_start_registrationFinishedNoEmailProfileFragment"
+            app:destination="@id/registrationFinishedNoEmailProfileFragment" />
+        <argument
+            android:name="userPhoneNumber"
+            android:defaultValue='""'
+            app:argType="string" />
+        <action
+            android:id="@+id/action_start_registrationFinishedWithEmailProfileFragment"
+            app:destination="@id/registrationFinishedWithEmailProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFinishedNoEmailProfileFragment"
+        android:name="com.umbrellait.profile.presentation.registration_finished.RegistrationFinishedNoEmailProfileFragment"
+        android:label="fragment_profile_registration_finished_no_email"
+        tools:layout="@layout/fragment_profile_registration_finished_no_email">
+        <argument
+            android:name="phoneNumber"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="userName"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="email"
+            android:defaultValue='""'
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFinishedWithEmailProfileFragment"
+        android:name="com.umbrellait.profile.presentation.registration_finished.RegistrationFinishedWithEmailProfileFragment"
+        android:label="fragment_registration_finished_with_email_profile"
+        tools:layout="@layout/fragment_profile_registration_finished_with_email" >
+        <argument
+            android:name="phoneNumber"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="userName"
+            android:defaultValue='""'
+            app:argType="string" />
+        <argument
+            android:name="email"
+            android:defaultValue='""'
+            app:argType="string" />
+        <action
+            android:id="@+id/action_start_with_email_registrationFinishedNoEmailProfileFragment"
+            app:destination="@id/registrationFinishedNoEmailProfileFragment" />
+    </fragment>
+</navigation>
